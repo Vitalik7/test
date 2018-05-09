@@ -1,0 +1,129 @@
+.block_5 {
+  width: 90%;
+  height: 600px;
+  margin-left: 5%;
+}
+
+.first-block {
+  display: inline-block;
+  width: 500px;
+  margin-top: 7%;
+}
+
+.first-block img {
+  float: right;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.29);
+}
+
+.text-foto{
+  float: right;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.text-foto h2 {
+  color: #636363;
+  letter-spacing: 1.2px;
+  font-family: OpenSans-Bold;
+  font-size: 24px;
+  opacity: 0.7;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.text-foto p {
+  display: inline-block;
+  color: #646464;
+  letter-spacing: 0.7px;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+b.last-line {
+  color: #646464;
+  letter-spacing: 0.7px;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.second-block {
+  display: inline-block;
+  width: 500px;
+  margin-top: 7%;
+  float: inherit;
+}
+
+.second-block img {
+  float: right;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8), 0 6px 20px 0 rgba(0,0,0,0.29);
+}
+
+@media screen and (max-device-width: 1146px), screen and (max-width: 1146px) {
+  .block_5 {
+    height: 720px;
+
+  }
+
+}
+
+@media screen and (max-device-width: 812px) {
+  .block_5 {
+    height: 720px;
+    margin-left: 0;
+  }
+
+  .text-foto{
+    position: absolute;
+    width: 430px;
+    float: left;
+    display: inline-block;
+    margin-right: 8%;
+
+  }
+
+  .text-foto h2 {
+    margin: 0;
+    color: #636363;
+    letter-spacing: 1.2px;
+    font-size: 40px;
+    opacity: 0.7;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .text-foto p {
+    display: inline-block;
+    letter-spacing: 0.7px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+  }
+
+  b.last-line {
+    letter-spacing: 0.7px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .first-block, .second-block  {
+    width: 80%;
+    float: right;
+  }
+
+  .first-block img, .second-block img {
+    height: 380px;
+    width: 40%;
+    float: right;
+  }
+
+}
