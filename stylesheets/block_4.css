@@ -1,74 +1,46 @@
-.block_4 {
-  display: block;
-  width: 90%;
-  height: 600px;
-  margin-left: 5%;
+#block_4 h1 {
+  color: #636363;
+  font-size: 32px;
+  line-height: 24px;
 }
 
-.block_4 h2 {
+#block_4 h1 {
   display: table;
-  margin: 0;
-  margin-top: 3%;
-  color: #bfbdbd;
-  letter-spacing: 1.1px;
-  font-size: 22px;
-  font-family: OpenSans-ExtraBold;
-  text-transform: uppercase;
-}
-
-.block_4 h1 {
-  display: table;
-  margin: 0;
   color: #636363;
   font-size: 32px;
   line-height: 24px;
   font-family: OpenSans-ExtraBold;
   text-transform: uppercase;
-
 }
 
-.item-list {
-  display: inline-block;
-  margin-top: 10%;
-  margin-left: 5%;
+#block_4 h2 {
+  color: #bfbdbd;
+  letter-spacing: 1.1px;
+  font-size: 22px;
 }
 
-.item-list li {
-  margin-top: 3%;
+#block_4 span {
+  color: black;
+}
+
+#block_4 li {
+  margin-top: 1%;
   color: #646464;
   font-weight: 700;
   font-size: 14px;
-  font-family: OpenSans-Bold;
   letter-spacing: 0.7px;
-  text-transform: uppercase;
   list-style-type: square;
   color: red;
 }
 
-.item-list span {
-  color: black;
-}
-
-.phone {
-  position: absolute;
-  z-index: 1;
-  width: auto;
-  height: auto;
-  display: inline-block;
-  margin-left: 15%;
-}
-
-img.phone {
-
-}
-
-img.mobile-screen {
-    margin: 23%;
+#block_4 ul {
+  padding: 5%;
 }
 
 .numbers {
   position: absolute;
   margin-left: -120px;
+  margin-top: -7px;
   color: #636363;
   font-family: OpenSans-Bold;
   font-size: 18px;
@@ -77,43 +49,8 @@ img.mobile-screen {
   transform: rotate(270deg);
 }
 
-@media screen and (max-device-width: 1000px), screen and (max-width: 1000px) {
-  .phone {
-    margin-left: 5%;
-  }
-
-  img.mobile-screen {
-      margin-left: 12%;
-  }
-}
-
-@media screen and (max-device-width: 860px), screen and (max-width: 860px) {
-  .block_4 {
-    width: 90%;
-    height: 700px;
-    margin-left: 5%;
-  }
-
-  .phone {
-    display: grid;
-    float: left;
-    position: relative;
-    margin-left: 5%;
-
-  }
-
-  img.mobile-screen {
-    position: absolute;
-    margin-left: 10%;
-    margin-top: 20%;
-  }
-
-  .item-list {
-    float: left;
-    width: 60%;
-    display: inline-block;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-
+.mobile-screen {
+  position: absolute;
+  top: 44px;
+  left: 27px;
 }

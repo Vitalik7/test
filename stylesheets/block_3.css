@@ -1,59 +1,23 @@
-.block_3 {
-  width: 90%;
-  height: 600px;
-  margin-left: 5%;
-  margin-top: 2%;
-}
 
-.block_3 h2 {
-  display: table;
-  margin: 0;
-  margin-top: 3%;
-  color: #bfbdbd;
-  font-size: 22px;
-  font-family: OpenSans-ExtraBold;
-  text-transform: uppercase;
-}
-
-.block_3 h1 {
-  display: table;
-  margin: 0;
+#block_3 h1 {
   color: #636363;
   font-size: 32px;
   line-height: 24px;
-  font-family: OpenSans-ExtraBold;
 }
 
-.data {
-  display: inline-block;
-  width: 300px;
-  margin: 5%;
+#block_3 h2 {
+  color: #bfbdbd;
+  font-size: 22px;
 }
 
-.data-right {
-  float: right;
-  display: inline-block;
-  width: 300px;
-  margin: 5%;
-}
-
-
-.result {
-  display: inline-block;
-  width: 150px;
-  margin-top: 12%;
-  margin-left: 15%;
-  text-align: right;
-}
-
-.result h2 {
+#block_3 b {
   display: inline-block;
   color: #636363;
   font-size: 26px;
   letter-spacing: 1.3px;
 }
 
-.result p {
+#block_3 h3 {
   display: inline;
   color: #bfbdbd;
   font-size: 16px;
@@ -61,43 +25,19 @@
   text-transform: uppercase;
 }
 
-.right-result-one {
-  margin-top: 12%;
-
+.result, .right-result-one, .right-result-two {
+  margin-top: 30px;
 }
 
-.right-result-two {
-  margin-top: 30%;
+
+
+.block-result {
+  padding-top: 10%;
+  padding-left: 5%;
 }
 
-.right-result-one h2 {
-  display: inline-block;
-  color: #636363;
-  font-size: 26px;
-  letter-spacing: 1.3px;
-}
-
-.right-result-one p {
-  display: inline;
-  color: #bfbdbd;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-
-.right-result-two h2 {
-  display: inline-block;
-  color: #636363;
-  font-size: 16px;
-  letter-spacing: 1.3px;
-}
-
-.right-result-two p {
-  display: inline;
-  color: #bfbdbd;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
+.block-result-right {
+  padding-top: 10%;
 }
 
 p.note {
@@ -107,141 +47,4 @@ p.note {
   font-size: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-}
-
-.img-bogu {
-  position: absolute;
-  margin-top: -5%;
-}
-
-
-@media screen and (max-device-width: 1300px), screen and (max-width: 1300px) {
-  .data {
-    width: 300px;
-    margin: 2%;
-  }
-
-  .data-right {
-    width: 300px;
-    margin: 0;
-  }
-}
-
-@media screen and (max-device-width: 1100px), screen and (max-width: 1100px) {
-  .right-result-one {
-    margin-top: 12%;
-    float: right;
-  }
-
-  .right-result-two {
-    margin-top: 30%;
-    float: right;
-  }
-}
-
-@media screen and (max-device-width: 950px), screen and (max-width: 950px) {
-  .block_3 {
-    width: 90%;
-    height: 700px;
-    margin-left: 5%;
-    margin-top: 2%;
-  }
-
-  .data {
-    width: 50%;
-    margin: 2%;
-  }
-
-  .data-right {
-    float: left;
-    display: grid;
-    width: 50%;
-    margin: 0;
-    margin-left: 5%;
-  }
-
-  .right-result-one {
-    margin-top: 12%;
-    float: left;
-  }
-
-  .right-result-two {
-    margin-top: 15%;
-    float: left;
-  }
-
-  .img-bogu {
-    float: left;
-    position: absolute;
-    margin-top: -5%;
-  }
-}
-
-@media screen and (max-device-width: 870px), screen and (max-width: 870px) {
-  .block_3 {
-    width: 90%;
-    height: 1000px;
-
-  }
-}
-
-@media screen and (max-device-width: 750px), screen and (max-width: 750px) {
-  .block_3 {
-    width: 90%;
-    height: 850px;
-  }
-  .data {
-    width: 300px;
-    float: left;
-  }
-
-  .data-right {
-    display: inline-block;
-    width: 400px;
-    margin: 0%;
-  }
-
-  .result {
-    float: left;
-    width: 187px;
-  }
-
-  .result h2, .right-result-two h2, .right-result-one h2 {
-    display: inline-block;
-    color: #636363;
-    font-size: 36px;
-    letter-spacing: 1.3px;
-  }
-
-  .result p, .right-result-one p {
-    display: inline;
-    color: #bfbdbd;
-    font-size: 26px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-  }
-
-  .right-result-two p {
-      font-size: 36px;
-  }
-
-  p.note {
-    display: table-row;
-    color: #dc8d8d;
-    font-weight: 700;
-    font-size: 24px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-  }
-
-  .img-bogu {
-    width: 400px;
-    display: grid;
-    float: left;
-    position: absolute;
-    margin-top: -5%;
-    margin-left: 3%;
-    opacity: 0.3;
-  }
-
 }

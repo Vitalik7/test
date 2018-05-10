@@ -2,6 +2,22 @@
 <html>
 <head>
 	<title>Tests</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="stylesheets/block_1.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="stylesheets/block_2.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="stylesheets/block_3.css" media="screen"/>
@@ -9,9 +25,9 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/block_5.css" media="screen"/>
 </head>
 <body>
-	<div class="container">
-		<div class="block_1">
-			<div class="left">
+	<div class="container-fluid">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="block_1">
+			<div class="col-xs-3 col-sm-4 col-md-3 border">
 				<hr class="black-line">
 				<h1>Improve </br>
 					 KENDO
@@ -22,146 +38,154 @@
 				</p>
 		 </div>
 
-		 <div class="center">
+		 <div class="col-xs-9 col-sm-4 col-md-5">
 		 		<img class="img-background" src="img/1.png" alt="logo">
 				<img class="img-bold" src="img/1x.png" alt="logo">
 		 </div>
 
-		 <div class="right">
-			 	<h1>itsuba</h1>
-				<form class="submit-form">
-					<input placeholder="full name" />
-					<input placeholder="email" />
-					<button type="submit" name="button">submit</button>
-					<h2>ENJOY </br>
-						 KENDO
-					 </h2>
+		 <div class="col-xs-12 col-sm-4 col-md-4 border">
+				<form class="form-group">
+					<h2>itsuba</h2>
+					<div class="col-md-10">
+						<input type="text" class="form-control" id="input-name" placeholder="full name" />
+						<input id="input-email" type="email" class="form-control" placeholder="email" />
+						<button type="submit" class="btn btn-default" id="btn-submit">submit</button>
+					</div>
+					<div class="col-md-10">
+						<h1>ENJOY </br>
+							KENDO
+						</h1>
+					</div>
 				</form>
 			</div>
 
 		</div>
 
-		<div class="block_2">
-			<div class="tsuba">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="block_2">
 				<h1>itsuba</h1>
 				<h2> consists of </h2>
-				<div class="list">
-					<div class="item">
-						<img src="img/one.png">
+				<div class="col-xs-12 col-sm-6 col-md-8">
+					<div class="col-md-6">
+						<img class="icon" src="img/one.png">
 						<p> Aluminium <br> body </p>
 					</div>
-					<div class="item">
-						<img src="img/board.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/board.png">
 						<p> Board </p>
 					</div>
-					<div class="item">
-						<img src="img/sensor.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/sensor.png">
 						<p> Acceleration <br> sensor </p>
 					</div>
-					<div class="item">
-						<img src="img/gyroscope.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/gyroscope.png">
 						<p> gyroscope </p>
 					</div>
-					<div class="item">
-						<img src="img/ssd.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/ssd.png">
 						<p> ssd </p>
 					</div>
-					<div class="item">
-						<img src="img/battery.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/battery.png">
 						<p> Battery </p>
 					</div>
-					<div class="item">
-						<img src="img/protectores.png">
+					<div class="col-md-6">
+						<img class="icon" src="img/protectores.png">
 						<p> Rubber <br> protectors </p>
 					</div>
 				</div>
-				<p class="text">Gyroscope and Acceleration sensors track all shinai movements in 3 dimensions. <br>
-					We store this data and analyze it with the help of machine learning algorithm that <br>
-					 defines the type, speed and accuracy of each strike.
-				 </p>
-			</div>
 
-			 <div class="tsuba_scheme" >
-				 <img src="img/tsuba.png">
-			 </div>
+				<div class="col-xs-12 col-sm-6 col-md-4" >
+					<img src="img/tsuba.png">
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<p class="text">Gyroscope and Acceleration sensors track all shinai movements in 3 dimensions. <br>
+						We store this data and analyze it with the help of machine learning algorithm that <br>
+						defines the type, speed and accuracy of each strike.
+				 </p>
+				</div>
 		</div>
 
-		<div class="block_3">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="block_3">
 			<h2>ALL what you need</h2>
 			<h1>YOU CAN <br> TRACK</h1>
-			<div class="data">
+			<div class="col-xs-12 col-sm-3 col-md-4 block-result">
 				<div class="result">
-					<h2> 74  </h2>
-					<p> m/s </p>
+					<b> 74  </b>
+					<h3> m/s </h3>
 					<p class="note">  strike speed</p>
 				</div>
 				<div class="result">
-					<h2> 82 </h2>
-					<p> % </p>
+					<b> 82 </b>
+					<h3> % </h3>
 					<p class="note">strike accuracy</p>
 				</div>
 				<div class="result">
-					<h2> 2428 </h2>
-					<p> kkal </p>
+					<b> 2428 </b>
+					<h3> kkal </h3>
 					<p class="note">calories burned</p>
 				</div>
 			</div>
-			<img class="img-bogu" src="img/bogu-picture.png">
-			<div class="data-right">
+			<div class="col-xs-12 col-sm-5 col-md-4">
+				<img class="img-bogu" src="img/bogu-picture.png">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 block-result-right">
 				<div class="right-result-one">
-					<h2> 458 </h2>
-					<p> total hits </p>
+					<b> 458 </b>
+					<h3> total hits </h3>
 					<p class="note">number of strikes</p>
 				</div>
 				<div class="right-result-two">
-					<h2> MEN/ <p> TSUKI</p> / DO/ <p>KOTE</p> </h2>
+					<b> MEN/ <h3> TSUKI</h3> / DO/ <h3>KOTE</h3> </b>
 					<p class="note">type of strikes</p>
 				</div>
 
 			</div>
 		</div>
 
-		<div class="block_4">
-			<h2>How it works</h2>
-			<h1>Share your data <br>
-				with your friends
-			</h1>
-			<div class="item-list">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="block_4">
+			<div class="col-xs-12 col-sm-6 col-md-8">
+				<h2>How it works</h2>
+				<h1>Share your data <br>
+					with your friends
+				</h1>
 				<ul>
 					<li><span>Turn on your iTsuba <br>  before keiko </span></li>
-					<li><span>iTsuba will collect all data <br> about your movements</span>			<div class="numbers"> 004 &ensp; 003 &ensp; 002 &ensp; 001  </div>
-</li>
+					<li><span>iTsuba will collect all data <br> about your movements</span>
+						<div class="numbers"> 004 &ensp; 003 &ensp; 002 &ensp; 001  </div>
+					</li>
 					<li><span>Connect iTsuba <br> to your smartphone</span> </li>
 					<li><span>A machine-learning algorithm will analyze <br> all data and show you statistics</span></li>
 				</ul>
-
-
 			</div>
-			<div class="phone">
+
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<img class="phone" src="img/phone.png">
 				<img class="mobile-screen" src="img/mobile-screeb.png"
 			</div>
 		</div>
 
 	</div>
-	<div class="block_5">
-		<div class="first-block">
+
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="block_5">
+		<div class="col-xs-12 col-sm-6 col-md-6">
 			<img src="img/kendo.png" >
-			<div class="text-foto">
+			<div class="col-md-6">
 				<h2>For <br> kendokas</h2>
 				<p> track your kendo <br>
 					improve your results </p><br>
-					<b class="last-line">compare your results <br>
+					<b>compare your results <br>
 					with your friends </b>
 			</div>
 		</div>
-		<div class="second-block">
+		<div class="col-md-6">
 			<img src="img/photo.png" >
-			<div class="text-foto">
+			<div class="col-xs-12 col-sm-6 col-md-6">
 				<h2>For <br> dojo leaders</h2>
 				<p> Define weaknesses <br>
 					Control dynamics </p> <br>
-					<b class="last-line">Track results of all <br> dojo members </b>
+					<b>Track results of all <br> dojo members </b>
 			</div>
 		</div>
 	</div>

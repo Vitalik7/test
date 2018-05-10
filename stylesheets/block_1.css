@@ -1,58 +1,52 @@
-.container {
-  min-width: 700px;
+.container-fluid {
+  min-width: 400px;
   max-width: 1920px;
 }
-.block_1 {
-  width: 100%;
-  height: 600px;
+
+.container-fluid h1, h2, p {
+  font-family: OpenSans-ExtraBold;
+  text-transform: uppercase;
 }
 
-hr.black-line {
-  display: inline-block;
-  position: absolute;
-  float: left;
-  top: 25%;
-  width: 7px;
-  left: 5.3%;
-  height: 50px;
-  background: black;
+.form-group {
+  width: 300px;
 }
 
-.left {
-  float: left;
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  margin-left: 5%;
+.form-group input {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-group button {
+  margin-left: 40%;
+  margin-bottom: 10%;
+}
+
+#btn-submit {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #ffffff;
+  color: #646464;
+}
+
+.border {
   border: 2px solid #efefef;
 }
-.left h1 {
-  position: relative;
-  margin: 0;
-  margin-top: 10%;
+
+#block_1 h1 {
   line-height: 35px;
   color: #989898;
-  font-family: OpenSans-ExtraBold;
   font-size: 44px;
   text-transform: uppercase;
 }
 
-.left p {
+#block_1 p {
   display: inline-block;
-  width: 50%;
-  margin-top: 70%;
+  padding-top: 50%;
+  width: 250px;
   line-height: 14px;
-  font-family: OpenSans-ExtraBold;
   font-size: 14px;
-  text-transform: uppercase;
-}
-
-.center {
-  position: absolute;
-  display: inline-block;
-  width: 35%;
-  margin-top: 10%;
-  margin-left: 3%;
 }
 
 .img-background{
@@ -64,205 +58,8 @@ hr.black-line {
   margin-left: 125px;
 }
 
-.right {
-  float: right;
-  display: inline-block;
-  margin-right: 5%;
-  width: 30%;
-  height: 100%;
-  margin-left: 5%;
-  border: 2px solid #efefef;
-}
-
-.submit-form {
-  margin-top: 20%;
-}
-
-.right h1 {
-  position: relative;
-  margin-top: 10%;
-  line-height: 35px;
-  color: #1d1d1d;
-  font-weight: 400;
-  font-family: OpenSans-ExtraBold;
-  font-size: 44px;
-  text-transform: uppercase;
-}
-
-.right h2 {
-  line-height: 35px;
-  color: #989898;
-  font-weight: 400;
-  font-family: OpenSans-ExtraBold;
-  font-size: 44px;
-  text-transform: uppercase;
-}
-
-.right input {
-  display: inline-block;
-  width: 60%;
-  height: 40px;
-  margin-left: 20%;
-  margin-top: 5%;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.right button {
-  display: inline-block;
-  width: 50%;
-  height: 40px;
-  margin-left: 25%;
-  margin-top: 5%;
-  background: #ffffff;
-  color: #646464;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-family: OpenSans-Bold;
-  text-align: center;
-  text-transform: uppercase;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-/*  media */
-
-@media screen and (max-width: 1500px) {
-  .center {
-    margin-left: 0;
-  }
-
-  .left p {
-    margin-top: 80%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .center {
-    margin-left: -8%;
-  }
-
-  .left p {
-    margin-top: 90%;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .block_1 {
-    height: 500px;
-  }
-
-  .center {
-    margin-left: -15%;
-  }
-
-  .left p {
-    margin-top: 100%;
-  }
-
-  hr.black-line {
-    top: 20%;
-  }
-
-}
-
-@media screen and (max-device-width: 750px), screen and (max-width: 750px) {
-  .block_1 {
-    width: 70%;
-    height: 1000px;
-  }
-
-  .left {
-    float: left;
-    width: 80%;
-    height: 50%;
-    border: none;
-
-  }
-
-  .left h1 {
-    margin-top: 25%;
-    line-height: 60px;
-    font-size: 60px;
-  }
-
-  .left p {
-    display: inline-block;
-    width: 400px;
-    margin-top: 20%;
-    line-height: 30px;
-    font-size: 25px;
-    text-transform: uppercase;
-  }
-
-  .right {
-    float: left;
-    display: inline-block;
-    margin-right: 5%;
-    width: 100%;
-    height: 50%;
-    margin-left: 5%;
-    border: none;
-  }
-
-  .right h1 {
-    position: absolute;
-    margin-top: -45%;
-    line-height: 35px;
-    font-size: 90px;
-    display: none;
-  }
-
-  .right input {
-    display: inline-block;
-    width: 80%;
-    height: 80px;
-    margin-left: 20%;
-    margin-top: 5%;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .right button {
-    width: 80%;
-    height: 80px;
-    margin-top: 5%;
-    margin-left: 20%;
-    font-size: 30px;
-  }
-
-  .right h2 {
-    display: none;
-  }
-
-  .submit-form {
-    margin-top: 0%;
-  }
-
-  .center {
-    display: grid;
-    width: 70%;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-
-  .img-background {
-    width: 600px;
-    display: grid;
-    float: left;
-    position: absolute;
-    margin-top: -5%;
-    margin-left: 0%;
-  }
-
+@media screen and (max-device-width: 991px), screen and (max-width: 991px) {
   .img-bold {
-    display: none;
-  }
-
-  hr.black-line {
     display: none;
   }
 }
